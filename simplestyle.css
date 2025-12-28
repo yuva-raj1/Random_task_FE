@@ -1,0 +1,185 @@
+.section{
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+     
+}
+.section1{
+  display:flex;
+  padding: 10px;  
+  gap:30px;
+  list-style: none;
+}
+a{
+    /* color: white; */
+    text-decoration: none;
+}
+.section2{
+    padding: 18px;
+    font-size: 15px;
+    
+}
+
+
+
+.image{
+      display: flex;
+    justify-content: center; 
+    margin: auto;
+   
+}
+.imgtext{
+    position: absolute;
+     text-align: center;
+    top: 100%;
+    bottom: 10%;
+    color:white;
+    font-size: 30px;
+}
+.band{
+    text-align: center;
+    margin-top: 20px;
+}
+#para{
+    width: 500px; 
+    margin: auto;
+    text-align: justify;
+}
+#small{
+     display: flex;
+    justify-content: space-evenly;
+     text-align: center;
+     margin: auto;
+}
+#fig{
+    text-align: center;
+}
+
+
+.tour {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+}
+#cont{
+ text-align: center;  
+ margin: auto; 
+}
+#table {
+    background-color: white;
+    color: black;
+    width: 60%;
+    margin:auto;
+}
+/* table tr td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+#same td {
+    display:flex;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+} 
+
+#container {
+    display: flex;  
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+ #diff td{
+    display: flex;
+    justify-content: space-between;
+} 
+.circle {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+#slideimages {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+     gap: 25px;
+}
+
+.slides {
+    background-color: white;
+    color: black;
+    width: 250px;
+    padding:10px;
+    text-align: left;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.date {
+    color: gray;
+    font-size: 14px;
+}
+
+
+#button {
+    padding: 10px;
+}
+
+#button button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    /* cursor: pointer; */
+
+}
+
+.contact{
+    text-align: center;
+    
+}
+#addr{
+      display: flex;
+      justify-content: center; 
+      gap: 75px;
+    
+}
+#button1 {
+    padding: 10px;
+}
+
+#button1 button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    /* cursor: pointer; */
+    float:right;
+
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:lightslategray;
+    background-color:white;
+}
+a{
+    color: inherit;
+}
