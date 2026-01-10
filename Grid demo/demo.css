@@ -1,0 +1,51 @@
+body{
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+   
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.BOX{
+  border: 2px solid blue;
+  background-color: white;
+  text-align: center;
+  color: black;
+  margin-top: 15%;
+  margin-left: 35%;
+  width: fit-content;
+  padding: 10px;
+}
+.box{
+    color: black;
+    width: 1000px;  
+    height: 875px;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:150px 250px 250px 150px ;    
+}
+.box>div{
+    background-color: lightgreen;
+    /* text-align: center; */
+      display: grid;
+      place-items: center center;
+}
+
+ .class1,.class6{
+    grid-column: 1/4;
+   
+ }
+ .class2{
+    grid-row:2/4;
+     
+   
+ }
+ .class3{
+    grid-column: 2/4;
+   
+ }
