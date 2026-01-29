@@ -1,0 +1,526 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.first{
+    height: 120vh;
+    width: 100%;
+    background-image: url("https://jevelin.shufflehound.com/business/wp-content/uploads/sites/39/2019/11/Rectangle-1-copy-7.jpg?id=10");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+     padding: 10px;
+}
+.contactinfo{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px; 
+}
+.m1{
+    display: none;
+}
+
+#m{
+    display: none;
+} 
+.smediaicons{
+    /* display: block;  */
+    display: flex;
+    justify-content: space-around;
+     gap: 15px;  
+}
+.demo{
+    display: none;
+}
+.demo ul{
+    display: felx;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.demo .micons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+@media screen and (max-width:600px){
+.smediaicons{ 
+    display: none;  
+}  
+.m1{
+    display: inline;
+}
+#m:checked ~ .demo{       
+    display: inline-block;  
+}
+.first{
+    height:180vh;
+}
+}
+.second{   
+    padding: 10px;
+    margin: 0px;
+    display:flex;
+    justify-content: space-around;
+    color: white;
+}
+h5{
+    font-size: 3rem;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+     gap: 20px;
+}
+.list ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    color: white;
+}
+.minibox{
+    border: 1px solid white;
+    padding:5px 10px; 
+    background-color: blue;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.minibox p {
+    margin: 0;
+    /* color: white; */
+}
+.minibox:hover p {
+    color: lightblue;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 1rem;
+}
+@media screen and (max-width:600px){
+ .menu{
+    display: none;
+ }   
+}
+ .third{
+    /* border: 2px solid green; */
+    padding :5vw 10vw;
+    height:100vh;
+}
+.htext{
+    /* border: 2px solid red; */
+    text-align: center;
+    color:white;
+}
+h3{
+    font-size: 2rem; 
+}
+h6{
+    font-size: 5rem;
+}
+.tbox{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    width:80vw;
+    height: auto;
+    padding :5vw;
+    color: white; 
+}
+.i i{
+    font-size: 3rem;    
+}
+.i {   
+    /* border: 2px solid violet;    */
+    width:15vw;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+}
+.i1 { animation-delay: 1s; }
+.i2 { animation-delay: 1.4s; }
+.i3 { animation-delay: 2s; }
+@keyframes fadeUp {
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
+}
+.sphase{
+    width: 60vw;
+    margin-left: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont1{
+    width: 15vw;
+}
+.cont1>h3{
+    font-size: 3rem;
+}
+.cont1>p{
+    color: darkgray;
+}
+.sblock{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sb1 > h4{
+    color: blue;
+}
+.sb2 > h4{
+    color: blue;
+}
+.image1{
+     opacity: 0;
+  transform: translateX(250px);
+  animation: moveLeft 0.5s ease 1s forwards;
+}
+
+@keyframes moveLeft{
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.image2{
+     opacity: 0;
+  transform: translateX(-150px);
+  animation: moveRight 0.8s ease 1.5s forwards;
+}
+@keyframes moveRight{
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.sphase2{
+    width: 60vw;
+    margin-left: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+}
+.sbtn1{
+    padding:5px 10px; 
+    width: fit-content;
+    background-color: blue;
+    color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;  */
+}
+
+/* t r b l */
+.phase3{
+    /* border: 2px solid red; */
+   padding:5vw 10vw;
+   text-align: center;
+}
+.phase3>p{
+    color: blue;
+    
+}
+.cards{
+    position: relative;
+     /* border: 2px solid violet;  */
+     margin: 5px;
+    display: flex;
+     gap:3vw;
+    justify-content: space-around; 
+     width:80vw;
+}  
+.card i{
+    color: blue;
+    font-size: 2rem;
+}
+.cards > div{
+    width: fit-content;
+    border: 1px solid grey;   
+    padding: 2vw 5vw;
+} 
+.justimage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://jevelin.shufflehound.com/business/wp-content/uploads/sites/39/2019/11/Rectangle-532-copy.jpg?id=11");
+    background-repeat: no-repeat;
+    background-size: cover; 
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.pause1{
+    /* border: 2px solid green; */
+    i{
+        /* border: 2px solid red; */
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+        color: white;
+        font-size: 3rem;    
+}
+.pause1>i:hover{
+    color: aqua;
+}
+.slides{
+    /* border: 2px solid red; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    gap: 5%;
+}
+
+.s1{
+    /* border: 1px solid blue; */
+    h3{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    /* height: fit-content; */
+   width: 25vw;
+    padding:50px;
+}
+
+.s2{
+    border: 1px lightblue;
+    background-color: lightcyan;
+    padding: 20px;
+    h6{
+        color:blue;
+    }
+    height: fit-content;
+   width: fit-content;
+}
+.s2 .b1{
+   border: 1px solid blue; 
+   /* background-color: blue; */
+   padding: 15px 20px;
+   width: fit-content;
+   display: flex;
+   justify-content: start;
+   align-items: center; 
+}
+.b2{
+   border: 1px solid blue; 
+   background-color: blue;
+   padding: 15px 20px;
+   color: white;
+   width: fit-content;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+
+.s3{
+    border: 2px solid blue;
+    padding: 20px;
+    h6{
+        color:blue;
+    }
+    height: fit-content;
+   width: fit-content;
+}
+
+.s1{
+    display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.s3{
+    background-color: lightgray;
+    border: 2px solid lightcyan;
+}
+.s2{  
+  animation: moveLft 0.3s ease 2s both;
+}
+@keyframes moveLft{
+   from{
+    opacity: 0;
+    transform: translateX(50vw);
+   }
+    to{
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+}
+.s3{
+    animation:moveRgt 0.8s ease 4s both;
+}
+@keyframes moveRgt{
+   from{
+    opacity: 0;
+    transform: translateX(50vw);
+   }
+    to{
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+}
+.justcontact{
+    width: 100vw;
+    height: 80vh;
+    background-image: url("https://jevelin.shufflehound.com/business/wp-content/uploads/sites/39/2019/11/Rectangle-534-copy.jpg?id=12");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactcontent{
+    width: 50vw;
+     padding: 5vw;
+     text-align: center;
+}
+h1{
+    font-size: 3rem;
+    color: white;
+}
+.contactcontent>p{
+    color: blueviolet;
+    font-size: 2rem;
+}
+.contactbtn{
+    border: 2px solid blue;
+    width: fit-content;
+    color: white;
+    padding: 1vw;
+    font-size: 2rem;
+    margin-left: 15vw;
+}
+.last{
+    background-color: black;
+    color: white;
+    height: 80vh;
+    width: 100vw;
+     padding:5vw;
+}
+ .boxnew{
+    height: 65vh;
+    padding: 5vw;
+} 
+.l1>p{
+    font-size: 2rem;
+}
+.box1>h2{
+    font-size: 3rem;
+}
+.l1{
+    display: flex;
+    justify-content: space-between;
+    padding:4vw 5vw;
+}
+
+.l1>div{
+    width:250px;
+    height: 100px;
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    color: cadetblue;
+}
+.l2{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.mini2{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.list1 a{
+    color: white;
+}
+.list1 ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.icon1 button{
+    border-radius: 50%;
+    background-color: lightblue;
+    i{
+        color: blue;
+    }
+}
+@media screen and (max-width: 600px) {
+ 
+  .second,
+  .menu,
+  .tbox,
+  .sphase,
+  .cards
+  {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .sphase2{
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .list ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image1,.image2 img {
+    width: 100%;
+  }
+
+  .htext h3 {
+    font-size: 2rem;
+  }
+  .justcontact{
+    height:120vh ;
+  }
+  .last{
+    height: 150vh;
+  }
+  .l1{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15vw;
+  }
+  .mini2{
+    flex-direction: column;
+  }
+  .slides{
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .s1{
+    width: fit-content;
+  }
+}
