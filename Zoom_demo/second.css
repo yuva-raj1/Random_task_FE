@@ -10,9 +10,7 @@ border: 2px black solid;
 padding-top: 5px;
 
 }
-.child1{
-   
-}
+
 p{
 
     color: white;
@@ -20,19 +18,12 @@ p{
     margin: auto;
     text-align: center;
 }
-.child2{}
-.child3{}
-.child4{}
+
 sup{
     font-size: 8px;
     color: antiquewhite;
 }
-.child5{}
-.child6{}
-.child7{}
-.child8{}
-.child9{}
-.child10{}
+
 .parent2{
     display: flex;
     background-color: green;
