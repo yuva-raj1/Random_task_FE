@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>How would you define a function that takes two numbers as parameters and returns their sum?
+</h3>
+<script>
+    function sum(a,b){
+        console.log(a+b)
+    }
+    sum((3/4),34)
+</script>
+    <h3>If you define a function that accepts a string as a parameter, how would you modify it to print the string in uppercase?
+</h3>
+<script>
+    function strUppercase(str){
+        console.log("String in uppercase "+" \" "+str.toUpperCase()+" \" ");
+    }
+    strUppercase("paragraph")
+</script>
+<h3>In JavaScript, what happens if you pass an undefined value as an argument to a function that expects a parameter?
+</h3>
+<script>
+    function fun(b){
+        console.log("hello!")
+    }
+    fun(undefined)
+</script>
+<h3>Suppose you have a function that takes an array as a parameter. How would you check inside the function if the array is empty?
+</h3>
+<script>
+    function arrCheck(a){
+        if(a.length==0){
+            console.log("Array is empty")
+        }
+        else
+            console.log("Array is not empty")
+    }
+    arrCheck([]);
+</script>
+<h3>write a function that takes two numbers as parameters and returns their difference.
+</h3>
+<script>
+    function diff(a,b){
+        console.log(a-b)
+    }
+    diff(100.012,150)
+</script>
+<h3>Define a function that accepts a name and age as parameters, and returns a string with a greeting like "Hello, [name]! You are [age] years old."
+</h3>
+<script>
+    function concat(name,age){
+        console.log(`Hello, ${name}! You are ${age} years old.`)
+    }
+    concat("teja",24.6)
+</script>
+<h3>
+ Write a function that takes a number as a parameter and returns true if the number is a even number, otherwise false.
+</h3>
+<script>
+    function evenCheck(a){
+        if(a%2==0){
+            console.log(`${a} is "Even"`)
+        }
+        else
+            console.log(`${a} is "odd" `)
+    }
+    evenCheck(24)
+    evenCheck(17)
+    evenCheck(24.2)
+</script>
+
+</body>
+</html>
