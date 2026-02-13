@@ -1,0 +1,195 @@
+<<<<<<< HEAD
+/* *{
+margin: 0;
+padding:0;
+
+} */
+.box{
+    border: 5px black solid;
+    height: 800px;
+    width: 800px;
+    margin-top: 500px;
+    margin-left: 500px;
+    /* display: flex;  */
+     flex-wrap: wrap;
+}
+
+.row1{
+    display: flex; 
+    height: 100px; 
+    /* border: 1px solid black; */
+}
+.row2{
+    display: flex;  
+     height: 100px;  
+    /* border: 1px solid black; */
+}
+.row7{
+    display: flex;  
+     height: 100px;  
+    /* border: 1px solid black; */
+}
+.row8{
+    display: flex;  
+     height: 100px;  
+    /* border: 1px solid black; */
+}
+.row3{
+    display: flex;
+     height: 100px;  
+    /* border: 1px solid black; */
+}
+.row4{
+    display:flex;
+     height: 100px;  
+    /* border: 1px solid black; */
+}
+.row5{
+    display: flex;
+     height: 100px;  
+    /* border: 1px solid black; */
+}
+.row6{
+    display: flex;
+     height: 100px;  
+    /* border: 1px solid black; */
+}
+.row{ 
+    border: 1px solid black;
+    width:100px;
+    height: 100px;
+}
+
+
+
+.child:nth-child(even){
+     background-color: green;   
+}
+.child1:nth-child(odd){
+    
+     background-color:green;
+}
+.child2:nth-child(even){
+    background-color: green;
+}
+.child3:nth-child(odd){
+  
+     background-color: green;  
+}
+.child4:nth-child(even){
+     
+    background-color: green;
+}
+.child5:nth-child(odd){
+   
+    background-color:green;
+}
+.child6:nth-child(even){
+   
+    background-color: green;
+}
+.child7:nth-child(odd){
+  
+    background-color:green
+}
+
+i{
+   font-size: 2rem;
+    margin-top: 35px;    
+    margin-left: 35px;    
+=======
+.box{
+    border: 5px black solid;
+    height: 800px;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 50px;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+.row1{
+    display: flex; 
+    height: 100px; 
+    border: 1px solid black;
+}
+.row2{
+    display: flex;  
+     height: 100px;  
+    border: 1px solid black;
+}
+.row7{
+    display: flex;  
+     height: 100px;  
+    border: 1px solid black;
+}
+.row8{
+    display: flex;  
+     height: 100px;  
+    border: 1px solid black;
+}
+.row3{
+    display: flex;
+     height: 100px;  
+    border: 1px solid black;
+}
+.row4{
+    display:flex;
+     height: 100px;  
+    border: 1px solid black;
+}
+.row5{
+    display: flex;
+     height: 100px;  
+    border: 1px solid black;
+}
+.row6{
+    display: flex;
+     height: 100px;  
+    border: 1px solid black;
+}
+.row{ 
+    border: 1px solid black;
+    width:100px;
+    height: 100px;
+}
+
+
+
+.child:nth-child(even){
+     background-color: green;   
+}
+.child1:nth-child(odd){
+    
+     background-color:green;
+}
+.child2:nth-child(even){
+    background-color: green;
+}
+.child3:nth-child(odd){
+  
+     background-color: green;  
+}
+.child4:nth-child(even){
+     
+    background-color: green;
+}
+.child5:nth-child(odd){
+   
+    background-color:green;
+}
+.child6:nth-child(even){
+   
+    background-color: green;
+}
+.child7:nth-child(odd){
+  
+    background-color:green
+}
+
+i{
+   font-size: 2rem;
+    margin-top: 35px;    
+    margin-left: 35px;    
+>>>>>>> c38f7c180563b8b2690fee205fb6f11be57293a1
+}

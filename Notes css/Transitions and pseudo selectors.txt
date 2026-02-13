@@ -1,0 +1,22 @@
+Transitions and pseudo selectors
+pseudo : unknown until it is used(unknown presence)
+
+hover:
+syntax:
+selector:pseudo selector{ property:value;}
+example:
+.cont:hover{
+back-ground-color:color;
+}
+//represents or displays when cursor pointer movement takes place
+
+for transitions:
+
+
+selector{
+transition-property:background-color,padding;
+transition-duration:3s;
+transition-delay:4s;
+transition-timing-function:ease;(by default:linear)
+transition:all 3s 4s;(all prop)
+transition-property:	(for single prop particularly}
