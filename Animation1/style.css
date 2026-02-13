@@ -1,0 +1,66 @@
+body{
+    height: 500px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 200px; */
+}
+.box{
+    height: 1000px;
+    width: 600px;
+    border: 2px solid black;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: black;
+
+}
+.new{
+    height: 350px;
+    width: 10px;
+    border: 1px solid black; 
+     
+}
+.child1{
+    animation-name: sample;
+     background-color: aqua; 
+    /* transition: all 1.5s ease; */
+     animation-duration: 0.9s;
+    animation-delay: 0.4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.child2{
+    animation-name: sample;
+    background-color: deeppink;
+    /* transition: all 1.5s ease; */
+     animation-duration: 0.9s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.child3{
+    animation-name: sample;
+    background-color: blue;
+    /* transition: all 1.5s ease; */
+     animation-duration: 0.9s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes sample {
+    0%{
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(0.8,1.5);
+    }
+    100%{
+        transform: scale(0.5,0.5);
+    }
+}
