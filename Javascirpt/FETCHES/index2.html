@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Fetch</h3>
+    <script>
+        const Url="https://dummyjson.com/todos"
+        <!-- console.log(fetch(Url).then(res=>console.log(res))) -->
+        fetch(Url).then( op1 =>{return  op1.json() })
+        .then(op2=>{
+            console.log(op2);
+            for(i=0;i<op2.todos.length;i++){
+                if(op2.todos[i].id==6){
+                    console.log(op2.todos[i].userId)
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>
+ <!-- for(i=0;i<op2.todos.length;i++)
+            {   if(op2.todos[i].completed==false){
+                console.log(op2.todos[i].userId+"\n "+op2.todos[i].id);
+                console.log(op2.todos[i].completed)
+                }
+            } -->

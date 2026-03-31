@@ -1,0 +1,21 @@
+{
+  "movies": [
+    {
+      "role": "Antagonist",
+      "id": "e81b"
+    },
+    {
+      "name": "Prakashraj",
+      "role": "devotee",
+      "title": "Varanasi",
+      "id": "af4e"
+    },
+    {
+      "id": "1376",
+      "name": "Amithabachan",
+      "role": "Immortal warrior",
+      "title": "KALKI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

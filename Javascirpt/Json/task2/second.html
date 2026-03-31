@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data=[
+        {
+            "id":"1",
+            "qualification":"Btech"
+        },
+        {
+            "id":"2",
+            "qualifiac":"Degree bsc"
+        },
+        {
+            "id":"3",
+            "qual":"Diploma"
+        }
+        ]
+        let choice={
+            "method":"POST",
+            "headers":{"Content-Type":"application/json"}
+        }
+        for(i=0;i<data.length;i++){
+            choice.body=JSON.stringify(data[i]);
+            fetch("http://localhost:3000/data/",choice)
+            .then(a=> {
+                if(a.ok)
+                   console.log("POST done",a.status,a.statusText);
+                else
+                    console.log("Failed to post");
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h3>Arrow funtions</h3> 
+   <script>
+    var sum= (a,b)=> a+b;  //arrow funtion must store in a var to call and print the functioon
+    console.log(sum)//function definition no paramters
+     console.log(sum())//NaN since no parameters und+und=NaN
+    console.log(sum(10,20));
+   </script>
+   <script>
+   var result= (name)=> `Hello, ${name}`;
+   console.log(result("Shiva"))
+   </script>
+   <script>
+   var rs= (y)=>{
+        if(y%2==0)
+            return true;
+        else
+            return false;
+    }
+    console.log(rs(15))
+   </script>
+   <script>
+    var rs=(num)=>{   if(num>10) return true;
+                      else       return false;
+                  }
+    console.log(rs(12))
+   </script>
+   <script>
+   console.log(((a,b)=>{
+        if(a.length>b.length)
+           return a;
+        else if(b.length>a.length)
+           return b;
+        else 
+            return "Equal length";
+    })
+ ("siva","kasi"))///whole script is in print statement whwew fun calls herer and prints the data
+   </script>
+</body>
+</html>

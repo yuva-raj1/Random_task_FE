@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login</title>
+</head>
+<body>
+    <div class="container">
+    <h2>User Login</h2>
+
+    <input type="text" id="username" placeholder="Enter username"><br><br>
+    <input type="password" id="password" placeholder="Enter password"><br><br>
+
+    <button type="button" onclick="loginUser()">Login</button>
+    <div id="result"></div>
+    </div>
+    
+    <script>
+       async  function loginUser() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+             let res = await fetch(
+                `http://localhost:3000/users?username=${username}&password=${password}`
+            );
+
+            let users = await res.json();
+
+            let result = document.getElementById("result");
+
+            if (users.length > 0) {
+                result.innerHTML = `
+                    <h3>Login Successful</h3>
+                    <a href="userview.html">Open Dashboard</a>
+                `;
+            } else {
+                result.innerHTML = `
+                    <h3>Invalid Credentials</h3>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

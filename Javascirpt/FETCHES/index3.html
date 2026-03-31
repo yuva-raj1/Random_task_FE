@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Fetch functionality returns promise status</h3>
+    <script>
+        const ref="https://jsonplaceholder.typicode.com/photos"
+        fetch(ref)
+        .then ( check => { return check.json()})
+        .then(status =>
+        {  console.log(status);
+          for(i=100;i<201;i++){
+            if(status[i].id >100 && status[i].id<=200)
+            {
+                console.log(status[i].albumId)
+            }
+        }
+        })
+    </script>
+</body>
+</html>
+<!-- </html>
+for(i=0;i<status.length;i++){
+                console.log(status[i].thumbnailUrl)
+            } -->

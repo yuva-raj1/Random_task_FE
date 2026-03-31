@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+</head>
+<body>
+    <div class="container">
+    <h2>Admin Login</h2>
+
+    <label>USER NAME:</label>
+    <input type="text" id="name"><br><br>
+
+    <label>PASSWORD:</label>
+    <input type="password" id="pwd"><br><br>
+
+    <button type="button" onclick="adminLogin()">SUBMIT</button>
+
+    <div id="box"></div>
+    </div>
+
+    <script>
+        function adminLogin() {
+            let name = document.getElementById("name").value;
+            let pwd = document.getElementById("pwd").value;
+
+            let box = document.getElementById("box");
+
+            if (name === "admin" && pwd === "admin123") {
+                box.innerHTML = `
+                    <h3>Login Successful</h3>
+                    <a href="admindb.html">Open Admin Dashboard</a>
+                `;
+            } else {
+                box.innerHTML = "<h3>Invalid Admin Credentials</h3>";
+            }
+        }
+    </script>
+</body>
+</html>

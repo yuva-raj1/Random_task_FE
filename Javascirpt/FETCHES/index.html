@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Fetches</h3>
+    <script>
+        //fetch functionality
+        const Link="https://dummyjson.com/quotes"
+        fetch(Link)
+       .then(res1 => res1.json())
+       .then((res)=>{
+        console.log(res);
+          for(i=0;i<=res.quotlength;i++)
+            {   if(i%2!=0){
+                console.log(res.quotes[i].quote)
+                 }
+            }            
+        })
+       .catch((rej)=>console.log(rej))
+
+       
+
+
+    </script>
+</body>
+</html>

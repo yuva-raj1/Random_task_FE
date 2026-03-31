@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "qualification": "Btech"
+    },
+    {
+      "id": "2",
+      "qualifiac": "Degree bsc"
+    },
+    {
+      "id": "3",
+      "qual": "Diploma"
+    }
+  ]
+}

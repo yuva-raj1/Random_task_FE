@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Call back functions</h3>
+    <script>
+        function processNum(num,callback){
+            num+=num;
+            callback(num);
+        }
+        function b(w){
+            console.log("second"+w*10);
+        }
+        processNum(10,b)
+    </script>
+    <script>
+        function forEachElement(a,callback){
+            for(var i=0;i<a.length;i++){
+                  <!-- var ele=a[i]; -->
+                callback(a[i],i)
+            }
+        }
+        function sent(e,i){
+              console.log(i+" element :"+e)
+        }
+        forEachElement([1,2,3,4,5],sent)
+    </script>
+    <!-- <script>
+        function sayHello(nm,cb){
+            setTimeout(cb,1000,`Hello ${nm}`)
+        }
+        function cb2(name){
+            console.log(name);
+        }
+        sayHello("Irfankhan",cb2)
+    </script> -->
+    <script>
+       function checkEven(num,c1,c2){
+        console.log(num%2==0?c1(num):c2(num) );
+       } 
+       function cb1(n){
+          return (n+"is Even");
+       }
+       function cb2(n){
+        return (n+" is odd");
+       }
+       checkEven(34,cb1,cb2);
+    </script>
+
+    <script>
+       function performTasks(num,c1,c2){
+            console.log("Thus Result is :"+c2(c1(num)));
+       }
+       function cb1(n){
+        console.log("add 5 to the number:"+n+"\n Result is "+(n+5))
+        return n+5; 
+       }
+       function cb2(cb1){
+        console.log("multiply the result with 2 "+"\n"+(cb1*2))
+        return cb1*2; 
+       }
+      performTasks(25,cb1,cb2);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>User Registration</h2>
+
+    <input type="text" id="username" placeholder="Enter username"><br><br>
+    <input type="password" id="password" placeholder="Enter password"><br><br>
+
+    <button type="button" onclick="registerUser()">Register</button>
+    <div id="result"></div>
+    </div>
+    <script>
+    async  function registerUser() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    let userObj = {
+                username: username,
+                password: password
+            };
+    let res = await fetch("http://localhost:3000/users", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(userObj)
+            });
+
+            let result = document.getElementById("result");
+
+            if (res.ok) {
+                result.innerHTML = `
+                    <h3>Registration Successful</h3>
+                    <a href="userfile.html">Go to Login</a>
+                `;
+            } else {
+                result.innerHTML = `<h3>Registration Failed</h3>`;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

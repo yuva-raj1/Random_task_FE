@@ -1,0 +1,11 @@
+{
+  "justasking": [
+    {
+      "id": "420",
+      "name": "vivekOberoi",
+      "character": "villian",
+      "present": "Spirit"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

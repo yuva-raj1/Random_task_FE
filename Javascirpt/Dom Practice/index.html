@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3><abbr title="Document Object Model">Dom</abbr></h3>
+    <script>
+
+            let ul=document.createElement("ul")
+            for(i=0;i<5;i++){
+                var li=document.createElement("li");
+                li.innerText="Disk "+(i+5)
+                ul.appendChild(li)
+            }
+            // li[0]="asdf";7
+            document.body.appendChild(ul);
+            console.log(ul)
+    </script>
+    <script>
+        let con=document.createElement("div")
+        let para=document.createElement("p")
+        para.innerText="Javascript frontend technology"
+        con.appendChild(para)
+        document.body.appendChild(con)
+        console.log(con)
+    </script>
+
+    <script>
+        let con1=document.createElement("div")
+        let headd=document.createElement("h1")
+        let parra=document.createElement("p")
+        headd.innerText="Frontend Technologies";
+        parra.innerText="Html Css Javascript";
+      
+        con1.append(headd,parra)
+        document.body.appendChild(con1)
+        console.log(con1)
+    </script>
+    <script>
+        let tble=document.createElement("table")
+        let tbrow=document.createElement("tr")
+        for(i=0;i<3;i++){
+            let tbtd=document.createElement("td")
+            tbtd.innerText=`DATA ${i/10}`+"\n";
+            tbrow.appendChild(tbtd);
+        }
+        tble.appendChild(tbrow)
+        document.body.appendChild(tble)
+        console.log(tble)
+    </script>
+
+    <script>
+        let contt=document.createElement("div")
+        for(i=1;i<=5;i++){
+            let bt=document.createElement("button");
+            bt.innerText=`Button ${i*5}`;
+            contt.appendChild(bt)
+        }
+        document.body.appendChild(contt)
+        console.log(contt)
+    </script>
+
+</body>
+</html>

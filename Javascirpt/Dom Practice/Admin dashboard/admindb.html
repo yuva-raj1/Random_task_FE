@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Movie Dashboard</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form{
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 400px;
+            margin-bottom: 20px;
+        }
+
+        input{
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button{
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #box{
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+
+        .movie-card{
+            border: 1px solid #aaa;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Admin Movie Dashboard</h2>
+
+    <form>
+        <input type="hidden" id="id">
+
+        <label>Movie Name:</label>
+        <input type="text" id="movieName" placeholder="Enter movie name"><br>
+
+        <label>Release Date:</label>
+        <input type="text" id="releaseDate" placeholder="DD MMM YYYY"><br>
+
+        <label>Image URL:</label>
+        <input type="text" id="image" placeholder="Enter image URL"><br>
+
+        <label>Status:</label>
+        <input type="text" id="status" placeholder="Upcoming / Recent Release"><br>
+
+        <label>Genre:</label>
+        <input type="text" id="genre" placeholder="Action / Thriller"><br>
+
+        <button type="button" onclick="saveInfo()">Save Movie</button>
+    </form>
+
+    <div id="box"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

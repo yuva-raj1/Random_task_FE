@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+         #tool {
+        width: 320px;
+        margin: 80px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+    }
+
+    /* Heading */
+    #tool h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    /* Inputs & dropdowns */
+    input, select {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    /* Button */
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #007bff;
+        color: white;
+       
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+  
+
+    /* Result box */
+    #result {
+        margin-top: 12px;
+        height: 45px;
+        font-size: 16px;
+        text-align: center;
+        border: 1px solid white;
+    }
+    </style>
+</head>
+<body>
+    <div id="tool">
+        <h2>Currency calci</h2>
+        <input type="number" name="value" id="content"><br>
+        <select id="from">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select><br>
+        <select id="to">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select><br>
+        <button id="action">CONVERT</button><br>
+        <input type="text" id="result" readonly>
+        <!-- <input type="textarea" height="50px" width="200px"> -->
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

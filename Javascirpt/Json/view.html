@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Methods usage in fetch</h3>
+    <script>
+        fetch("http://localhost:3000/movies/1376",
+            {
+                "method": "PATCH",
+                "headers": { "content-Type": "application/json" },
+                "body":JSON.stringify( {  
+                    "role": "Immortal warrior"
+                })
+            }
+        ).then(a => {
+            if (a.ok)
+                console.log(a.status);
+            else
+                console.log("Wrong thing done")
+        }).catch(a=>console.log(a));
+        
+    </script>
+</body>
+
+</html>
