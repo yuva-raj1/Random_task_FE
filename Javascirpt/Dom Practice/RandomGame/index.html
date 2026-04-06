@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Random name generator</h3>
+    <form>
+        <input type="text" placeholder="Enter name" id="fname"><br><br>
+        <button type="button" onclick="displayInfo()">Generate Nickname</button>
+    </form>
+    <div id="res"></div>
+    <script>
+     
+        async function displayInfo(){
+            try{
+            let res=await fetch("http://localhost:3000/data")
+            let ans=await res.json();
+            console.log(ans)
+           
+                //throw new Error();
+            if(res.ok){
+                let fname=document.getElementById("fname").value
+                let result=document.getElementById("res")
+                if(fname==""){
+                    alert("INVALID ENTRY..!")
+                }
+                else{
+                result.innerHTML=`
+                <h2>${fname} your random name is ${ans[Math.floor(Math.random()*ans.length)].name}`
+                }
+            }
+            else{
+                console.log("Invalid data")
+            }
+        }
+        
+        catch(error){
+            console.log("Exception",error);
+        }
+    }
+    document.addEventListener("DOMContentLoaded",displayInfo);
+    </script>
+</body>
+</html>
