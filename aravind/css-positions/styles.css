@@ -1,0 +1,17 @@
+.container{
+    position:relative;
+    width:100%;
+}
+.child-1{
+    top:50%;
+    left: 40%;
+    position:absolute;
+    color:white;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+b{
+    background-color: black;
+    padding:7px;
+    font-size: 30px;
+}
