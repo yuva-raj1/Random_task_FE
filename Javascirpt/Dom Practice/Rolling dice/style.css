@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #c4b5fd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main container */
+body > div {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+    font-size: 42px;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+/* Dice boxes layout */
+.box1,
+.box2 {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 18px;
+    background: #f8fafc;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Player names */
+h4 {
+    font-size: 22px;
+    color: #334155;
+    margin-bottom: 15px;
+}
+
+/* Dice images */
+img {
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.08) rotate(5deg);
+}
+
+/* Result text */
+#result {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #0f172a;
+    min-height: 40px;
+}
+#playAgain {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background: #4f46e5;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#playAgain:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .box1,
+    .box2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #result {
+        font-size: 26px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    body > div {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #result {
+        font-size: 22px;
+    }
+}
