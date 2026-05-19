@@ -1,0 +1,31 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.calci{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  border-radius: 10px;
+}
+button{
+  margin: 5px;
+  padding: 5px;
+  width: 40px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}
+.res{
+  width:200px;
+  height: 50px;
+  border: 2px solid white;
+  text-align: right;
+  padding: 10px;
+}

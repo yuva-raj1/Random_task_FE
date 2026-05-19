@@ -1,0 +1,168 @@
+/* Appdemo.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(to right,#141e30,#243b55);
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    padding:30px;
+}
+
+/* Navbar */
+
+.nav_bar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+
+    gap:20px;
+}
+
+.nav_bar h1{
+    color:white;
+    font-size:40px;
+}
+
+.nav_bar input{
+
+    width:280px;
+
+    padding:12px 15px;
+
+    border:none;
+    outline:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+}
+
+/* Container */
+
+.appcardscontainer{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+}
+
+/* Full Width Card */
+
+.appcards{
+
+    width:100%;
+
+    background:rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+
+    box-shadow:0px 8px 20px rgba(0,0,0,0.3);
+
+    transition:0.3s;
+}
+
+.appcards:hover{
+    transform:translateY(-5px);
+}
+
+.appcards img{
+
+    width:80px;
+    height:80px;
+
+    object-fit:contain;
+}
+
+.appcards h1{
+
+    flex:1;
+
+    color:white;
+
+    font-size:24px;
+}
+
+/* Delete Button */
+
+.appcards button{
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ff4d4d;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.appcards button:hover{
+
+    background:#d60000;
+
+    transform:scale(1.05);
+}
+
+/* No Data */
+
+.nodata{
+
+    color:white;
+
+    text-align:center;
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+    .appcards{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+    }
+
+    .appcards h1{
+        font-size:22px;
+    }
+
+    .nav_bar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .nav_bar input{
+        width:100%;
+    }
+}
