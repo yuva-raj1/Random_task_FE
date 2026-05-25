@@ -1,0 +1,261 @@
+/* Products.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:linear-gradient(
+        to right,
+        #141e30,
+        #243b55
+    );
+
+    min-height:100vh;
+
+    padding:30px;
+}
+
+/* Main Container */
+
+.products-container{
+
+    width:100%;
+}
+
+/* Heading */
+
+.heading{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:45px;
+
+    margin-bottom:30px;
+
+    letter-spacing:2px;
+}
+
+/* Buttons */
+
+.btn-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:30px;
+}
+
+.btn-container button{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:white;
+
+    color:#222;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.btn-container button:hover{
+
+    background:#00c6ff;
+
+    color:white;
+
+    transform:scale(1.08);
+}
+
+/* Search */
+
+ input{
+
+    width:350px;
+
+    padding:14px 18px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Cards Container */
+
+.cards-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+/* Product Card */
+
+.card{
+
+    background:rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0px 8px 20px rgba(0,0,0,0.3);
+
+    transition:0.3s;
+
+    color:white;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+}
+
+/* Product Image */
+
+.card img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:contain;
+
+    margin-bottom:18px;
+}
+
+/* Product Title */
+
+.card h1{
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+    min-height:60px;
+}
+
+/* Description */
+
+.card p{
+
+    font-size:15px;
+
+    line-height:1.5;
+
+    color:#e0e0e0;
+
+    display:-webkit-box;
+
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+}
+
+/* Loading & Empty */
+
+.message{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:35px;
+
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .heading{
+        font-size:35px;
+    }
+
+    .search-box input{
+        width:100%;
+    }
+
+    .btn-container button{
+
+        width:140px;
+
+        font-size:14px;
+    }
+
+    .card img{
+
+        width:140px;
+
+        height:140px;
+    }
+
+    .card h1{
+        font-size:20px;
+    }
+}
+
+@media(max-width:500px){
+
+    body{
+        padding:15px;
+    }
+
+    .heading{
+        font-size:28px;
+    }
+
+    .btn-container{
+        gap:10px;
+    }
+
+    .btn-container button{
+
+        width:100%;
+
+        padding:12px;
+    }
+
+    .cards-container{
+
+        grid-template-columns:1fr;
+    }
+}
